@@ -6,8 +6,3 @@ const connection = mysql.createConnection({
   password: '',
   database: 'turtle_app'
 });
-
-
-router.get('/turtles', (req, res) => {
-  connection.query('SELECT * FROM turtles')
-});
